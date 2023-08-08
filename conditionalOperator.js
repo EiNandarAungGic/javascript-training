@@ -104,3 +104,31 @@ while (i < obj.length) {
   console.log(obj[i].name);
   i++;
 }
+
+// forEach & for in
+let name = "Mg Mg"; // sequence of character
+console.log(name.length);
+
+let data =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+let split_val = data.split(" "); // dd = ["Lorem", "Ipsum", "is", "simply", "dummy", "text", "of", "the", "printing", "and", "typesetting", "industry."]
+
+split_val.forEach((val, index) => {
+  console.log(val + " => " + index);
+});
+
+for (x in split_val) {
+  console.log(split_val[x]);
+}
+
+let info = {
+  name: "Mg Mg",
+  age: 20,
+};
+
+console.log(info.name); // Mg Mg
+console.log(info["name"]); // Mg Mg
+
+for (vary in info) {
+  console.log("In for in => " + info[vary]);
+}
