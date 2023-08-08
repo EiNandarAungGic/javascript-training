@@ -18,3 +18,8 @@ console.log(Number(st1).toFixed(2)); // 20.63
 console.log(typeof Number(st)); // number
 console.log(Number(st)); // NaN
 console.log(Number(st1)); // 20.6333333
+
+// Ternary Operator
+let no = 20;
+n = no == 20 ? "Mg Mg" : "Aung Aung";
+console.log(n); // Mg Mg
