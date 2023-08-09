@@ -51,3 +51,19 @@ li.appendChild(aLink);
 
 // lis.prepend(li);
 lis.appendChild(li);
+
+// --------------------------------------------------------------
+// Replacing Elements
+let oldH1 = document.querySelector("#head");
+let txt = document.createTextNode("New Header");
+let newH1 = document.createElement("h1");
+newH1.appendChild(txt);
+newH1.className = "biber";
+newH1.id = "bibi";
+oldH1.className = "head";
+console.log(oldH1);
+
+let body = oldH1.parentNode; // get body
+body.replaceChild(newH1, oldH1);
+
+console.log(newH1);
