@@ -6,3 +6,12 @@ console.log(document.title); // JS Training
 console.log(document.forms);
 console.log(document.links);
 console.log(document.links[1].className); // mylink
+
+// Query Selector
+// let list = document.querySelector("ul li:first-child > a");
+let list = document.querySelectorAll("ul li");
+
+for (let i = 0; i < list.length; i++) {
+  let aTag = list[i].querySelector("a");
+  aTag.style.color = "red";
+}
