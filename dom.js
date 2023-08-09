@@ -16,6 +16,7 @@ for (let i = 0; i < list.length; i++) {
   aTag.style.color = "red";
 }
 
+// -------------------------------------------------------------
 // Travesting Nodes
 // 1 - Element
 // 2 - Attribute(deprecate)
@@ -38,3 +39,15 @@ for (let i = 0; i < lis.childNodes.length; i++) {
     console.log(node.childNodes[0].textContent);
   }
 }
+
+// --------------------------------------------------------------
+// Create Element
+let text = document.createTextNode("Six");
+let aLink = document.createElement("a");
+aLink.setAttribute("href", "#");
+aLink.appendChild(text);
+let li = document.createElement("li");
+li.appendChild(aLink);
+
+// lis.prepend(li);
+lis.appendChild(li);
