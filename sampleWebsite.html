@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200 font-sans flex flex-col items-center">
+    <header
+      class="bg-indigo-700 w-full px-4 py-3 flex justify-center border-b-4 border-pink-500"
+    >
+      <div class="max-w-4xl w-full">
+        <div class="flex items-center justify-between text-pink-500">
+          <svg
+            class="h-8 fill-current"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Scrimba</title>
+            <path
+              d="M24 6.222a2.222 2.222 0 01-2.222 2.222h-8.89a2.222 2.222 0 010-4.444h8.89C23.005 4 24 4.995 24 6.222zm-7.333 9.334h-8.89a2.222 2.222 0 000 4.444h8.89a2.222 2.222 0 000-4.444zm0-5.778H13.11a2.222 2.222 0 000 4.444h3.556a2.222 2.222 0 000-4.444zM2.222 15.556a2.222 2.222 0 100 4.444 2.222 2.222 0 000-4.444z"
+            />
+          </svg>
+          <button
+            type="button"
+            class="text-gray-500 hover:text-gray-400 sm:hidden"
+          >
+            <svg
+              class="w-6 h-6 fill-current"
+              viewBox="0 0 100 80"
+              width="40"
+              height="40"
+            >
+              <rect width="100" height="20"></rect>
+              <rect y="30" width="100" height="20"></rect>
+              <rect y="60" width="100" height="20"></rect>
+            </svg>
+          </button>
+        </div>
+        <div class="my-4">
+          <h1 class="text-2xl text-indigo-100">Want to learn Tailwind CSS?</h1>
+          <p class="text-sm text-indigo-200">
+            Tailwind is the fastest growing utility-first CSS framework. Let's
+            learn it step by step.
+          </p>
+          <div class="relative mt-4 flex justify-between">
+            <div>
+              <a
+                href="#"
+                class="bg-pink-500 text-indigo-100 font-bold mt-2 px-4 py-2 rounded-full text-xs uppercase"
+                >Enroll Now</a
+              >
+            </div>
+            <div
+              class="absolute right-0 bg-white rounded-full flex justify-center items-center p-5 border-4 border-pink-500"
+            >
+              <img class="w-16 h-16" src="tailwind_logo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="mt-16 w-full flex flex-col items-center">
+      <div class="max-w-4xl mx-4">
+        <h2
+          class="pb-1 font-bold text-xl text-indigo-700 border-b border-indigo-600"
+        >
+          How It Works
+        </h2>
+        <p class="text-sm mt-4 text-gray-600">
+          Tailwind CSS is basically a utility-first CSS framework for rapidly
+          building custom user interfaces. It is a highly customizable,
+          low-level CSS framework that gives you all of the building blocks you
+          need to build bespoke designs without any annoying opinionated styles
+          you have to fight to override.
+        </p>
+
+        <h2
+          class="mt-8 pb-1 font-bold text-xl text-indigo-700 border-b border-indigo-600"
+        >
+          Advantages
+        </h2>
+        <div class="flex flex-col sm:flex-row sm:-mx-2">
+          <div class="mt-4 sm:w-1/3">
+            <div
+              class="bg-white p-8 border-b-4 border-pink-500 h-full rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8"
+            >
+              <div class="bg-gray-200 text-indigo-700 w-16 rounded-full p-2">
+                <svg
+                  class="h-12 w-12 fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Scrimba</title>
+                  <path
+                    d="M24 6.222a2.222 2.222 0 01-2.222 2.222h-8.89a2.222 2.222 0 010-4.444h8.89C23.005 4 24 4.995 24 6.222zm-7.333 9.334h-8.89a2.222 2.222 0 000 4.444h8.89a2.222 2.222 0 000-4.444zm0-5.778H13.11a2.222 2.222 0 000 4.444h3.556a2.222 2.222 0 000-4.444zM2.222 15.556a2.222 2.222 0 100 4.444 2.222 2.222 0 000-4.444z"
+                  />
+                </svg>
+              </div>
+              <div class="mt-4 font-bold">500+ Components</div>
+              <div class="text-center mt-2 text-gray-600 text-sm">
+                Beautifully designed, expertly crafted components that follow
+                all accessibility best practices and are easy to customize.
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 sm:w-1/3">
+            <div
+              class="bg-white p-8 border-b-4 border-pink-500 h-full rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8"
+            >
+              <div class="bg-gray-200 text-indigo-700 w-16 rounded-full p-2">
+                <svg
+                  class="h-12 w-12 fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Scrimba</title>
+                  <path
+                    d="M24 6.222a2.222 2.222 0 01-2.222 2.222h-8.89a2.222 2.222 0 010-4.444h8.89C23.005 4 24 4.995 24 6.222zm-7.333 9.334h-8.89a2.222 2.222 0 000 4.444h8.89a2.222 2.222 0 000-4.444zm0-5.778H13.11a2.222 2.222 0 000 4.444h3.556a2.222 2.222 0 000-4.444zM2.222 15.556a2.222 2.222 0 100 4.444 2.222 2.222 0 000-4.444z"
+                  />
+                </svg>
+              </div>
+              <div class="mt-4 font-bold">500+ Components</div>
+              <div class="text-center mt-2 text-gray-600 text-sm">
+                Beautifully designed, expertly crafted components that follow
+                all accessibility best practices and are easy to customize.
+                Beautifully designed, expertly crafted components.
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 sm:w-1/3">
+            <div
+              class="bg-white p-8 border-b-4 border-pink-500 h-full rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8"
+            >
+              <div class="bg-gray-200 text-indigo-700 w-16 rounded-full p-2">
+                <svg
+                  class="h-12 w-12 fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Scrimba</title>
+                  <path
+                    d="M24 6.222a2.222 2.222 0 01-2.222 2.222h-8.89a2.222 2.222 0 010-4.444h8.89C23.005 4 24 4.995 24 6.222zm-7.333 9.334h-8.89a2.222 2.222 0 000 4.444h8.89a2.222 2.222 0 000-4.444zm0-5.778H13.11a2.222 2.222 0 000 4.444h3.556a2.222 2.222 0 000-4.444zM2.222 15.556a2.222 2.222 0 100 4.444 2.222 2.222 0 000-4.444z"
+                  />
+                </svg>
+              </div>
+              <div class="mt-4 font-bold">500+ Components</div>
+              <div class="text-center mt-2 text-gray-600 text-sm">
+                Beautifully designed, expertly crafted components that follow
+                all accessibility best practices and are easy to customize.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gray-800 py-12 mt-12 w-full flex flex-col items-center border-t-2 border border-black"
+      >
+        <h2 class="font-bold text-xl text-gray-400">
+          Sign up to download the free PDF
+        </h2>
+        <form
+          class="max-w-xl w-full text-gray-200 mt-4 px-8 md:px-0 md:mx-2"
+          action="#"
+        >
+          <div class="flex flex-col md:flex-row md:-mx-2">
+            <label for="first_name" class="sr-only">First Name</label>
+            <input
+              class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2"
+              type="text"
+              placeholder="First Name"
+              id="first_name"
+            />
+
+            <label for="last_name" class="sr-only">Last Name</label>
+            <input
+              class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full"
+              type="text"
+              placeholder="Last Name"
+              id="last_name"
+            />
+          </div>
+          <div class="flex flex-col md:flex-row md:-mx-2">
+            <label for="first_name" class="sr-only">First Name</label>
+            <input
+              class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2"
+              type="text"
+              placeholder="First Name"
+              id="first_name"
+            />
+
+            <label for="last_name" class="sr-only">Last Name</label>
+            <input
+              class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full"
+              type="text"
+              placeholder="Last Name"
+              id="last_name"
+            />
+          </div>
+          <div class="flex flex-col md:flex-row md:-mx-2">
+            <button
+              class="bg-blue-600 text-sm mt-4 rounded-lg py-2 px-4 w-full md:mx-2"
+            >
+              Create account
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="bg-gray-800 w-full text-center p-8">
+      <p class="text-xs text-gray-600 font-light">copyright gic.inc</p>
+    </footer>
+  </body>
+</html>
