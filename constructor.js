@@ -1,13 +1,13 @@
 function Person(name, age) {
   this.name = name;
   this.age = age;
-  this.getAge = () => {
-    // let diff = Date.now() - this.age.getTime();
-    // let ageDate = new Date(diff);
+  // this.getAge = () => {
+  // let diff = Date.now() - this.age.getTime();
+  // let ageDate = new Date(diff);
 
-    // return ageDate.getUTCFullYear() - 1970;
-    return this.age;
-  };
+  // return ageDate.getUTCFullYear() - 1970;
+  //   return this.age;
+  // };
 }
 
 let p1 = new Person("Mg Mg", 20);
@@ -24,8 +24,13 @@ Person.prototype.getName = function () {
   return this.name;
 };
 
+Person.prototype.getAge = function () {
+  return this.age;
+};
+
 Person.prototype.getUserData = function () {
   return this.name + " : " + this.age;
 };
 
 console.log(person.getUserData());
+console.log(person.getAge());
