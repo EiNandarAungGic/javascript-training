@@ -34,3 +34,18 @@ btn.addEventListener("mouseover", (e) => {
 btn.addEventListener("mousemove", (e) => {
   console.log("I'm mousemove");
 });
+
+// Form Events
+// keydown, keyup, keypress, focus, blur, cut, paste, change
+
+let form = document.querySelector("form");
+let input = document.querySelector("#inp");
+
+input.addEventListener("cut", (e) => {
+  txt.innerHTML = input.value;
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  txt.innerHTML = input.value;
+});
