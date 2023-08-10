@@ -66,6 +66,41 @@ let clearDb = () => {
   localStorage.removeItem("localdb");
 };
 
+// Session Storage
+
+let setDataToDb = (userObj) => {
+  let userAry = getFromDb();
+  if (userAry == null) {
+    userAry = [];
+    userAry.push(userObj);
+    saveToDb(userAry);
+  } else {
+    let ind = userAry.findIndex((user) => user.name == userObj.name);
+
+    if (ind == -1) {
+      userAry.push(userObj);
+      saveToDb(userAry);
+    } else {
+      alert("This user has already exist!");
+    }
+  }
+};
+
+let saveToDb = (aryObj) => {
+  let saveData = JSON.stringify(aryObj);
+  sessionStorage.setItem("userdb", saveData);
+};
+
+let getFromDb = () => {
+  let str = sessionStorage.getItem("userdb");
+  let aryObj = JSON.parse(str);
+  return aryObj;
+};
+
+let removeDb = () => {
+  sessionStorage.removeItem("userdb");
+};
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   // txt.innerHTML = input.value;
@@ -79,5 +114,6 @@ form.addEventListener("submit", (e) => {
 });
 
 delBtn.onclick = (e) => {
-  clearDb();
+  // clearDb();
+  removeDb();
 };
