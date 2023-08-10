@@ -30,3 +30,26 @@ let honda = new Honda("honda", 81);
 
 console.log(toyota.getSpeed());
 console.log(honda.getSpeed());
+
+// Prototype Otherway
+
+let carproto = {
+  getName: function () {
+    return this.name;
+  },
+  getSpeed: function () {
+    return this.speed;
+  },
+};
+
+let car = Object.create(carproto);
+car.name = "Toyota";
+car.speed = 180;
+
+let next_car = Object.create(carproto, {
+  name: { value: "Honda" },
+  speed: { value: 190 },
+});
+
+console.log(car);
+console.log(next_car);
