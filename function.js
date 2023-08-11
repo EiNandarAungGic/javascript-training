@@ -62,3 +62,20 @@ ary.reverse();
 console.log(ary); // [0, 9, 8, 7, 6, 5, 4, 2, 1]
 let combine = ary.concat(ary2);
 console.log(combine); // [0, 9, 8, 7, 6, 5, 4, 2, 1, 100, 200]
+
+// Arrow Function
+
+let names = ["Bo Bo", "Ko Ko", "Mo Mo", "Cho Cho", "Soe Soe"];
+let students = [
+  {
+    name: "mg mg",
+    age: 20,
+  },
+  {
+    name: "aung aung",
+    age: 30,
+  },
+];
+
+names.map((index) => console.log(index));
+students.map((stud) => console.log(stud.name));
