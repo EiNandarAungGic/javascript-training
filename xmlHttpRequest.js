@@ -85,3 +85,26 @@ fetch(url)
   // })
   .then((result) => console.log(result))
   .catch((err) => console.log(err));
+
+// Async await
+
+async function loadingData() {
+  const result = new Promise((resolve, reject) => {
+    let xhr = new XMLHttpRequest();
+    xhr.onload = function () {
+      if (this.status == 200) {
+        resolve(this.responseText);
+      } else {
+        reject("Data Load Error!");
+      }
+    };
+    xhr.open("GET", url);
+    xhr.send();
+  });
+  const con = await result;
+  return con;
+}
+
+loadingData()
+  .then((res) => console.log("resolve"))
+  .catch((err) => console.log(err));
