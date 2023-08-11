@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listings</title>
+  </head>
+  <body class="h-screen bg-teal-50">
+    <img
+      class="w-full h-1/6 bg-teal-700"
+      src="images/bg-header-desktop.svg"
+      alt=""
+    />
+    <div class="flex flex-col justify-center items-center">
+      <div
+        class="w-2/3 flex flex-row mt-2 p-8 bg-white shadow-lg rounded-lg overflow-hidden justify-between"
+      >
+        <div class="ml-3" id="txts">
+          <div class="bg-white flex flex-row shadow-lg rounded-md p-2 w-30">
+            <h2 class="text-md">Frontend</h2>
+            <span class="font-bold text-lg px-2 cursor-pointer">&#xD7;</span>
+          </div>
+        </div>
+        <div class="ml-3 cursor-pointer hover:underline" id="clearBtn">
+          Clear
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center items-center" id="jobs"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
