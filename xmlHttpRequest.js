@@ -70,6 +70,18 @@ function loadData() {
   });
 }
 
-loadData()
-  .then((res) => console.log(res))
+// loadData()
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
+
+// Fetch API
+
+fetch(url)
+  .then((res) => {
+    return res.json();
+  })
+  // .then((res) => {
+  //   return res.text();
+  // })
+  .then((result) => console.log(result))
   .catch((err) => console.log(err));
