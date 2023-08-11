@@ -108,3 +108,17 @@ async function loadingData() {
 loadingData()
   .then((res) => console.log("resolve"))
   .catch((err) => console.log(err));
+
+// Fetch and Promise
+
+function getData() {
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then((res) => resolve(res.text()))
+      .catch((err) => reject(err));
+  });
+}
+
+getData()
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err));
